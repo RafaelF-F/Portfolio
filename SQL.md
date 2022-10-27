@@ -35,14 +35,14 @@ Não é obrigatório, mas é considerada uma boa prática, finalizar uma query d
 
 |resultado:|
 |-----------|
- |vendedor|
- |Maria|
- |Ana|
- |Maria|
- |Maria|
- |Ana|
+|vendedor|
+|Maria|
+|Ana|
+|Maria|
+|Maria|
+|Ana|
 
-Agora vou estar selecionando o campo cliente da tabela vendas.
+Agora vou estar selecionando a coluna **cliente** da tabela vendas.
 
 **Utilizo a seguinte query:**
 
@@ -54,11 +54,21 @@ SELECT: Para selecionar a coluna **(cliente).**
 
 FROM: Para selecionar a tabela **(vendas).**
 
+|resultado:|
+|-----------|
+|cliente|
+|1|
+|2|
+|3|
+|4|
+|5|
+|6|
+
 ---
 
 **2.Selecionando dados**
 
-Posso selecionar mais de uma coluna da tabela, para isso, basta separar os campos com uma vírgula (,).
+Posso selecionar mais de uma coluna da tabela, para isso, basta separar os campos com uma vírgula **(,).**
 
 **Tabela - vendas**
 |cliente|vendedor|valor 
@@ -95,6 +105,8 @@ SELECT *
 FROM vendas;
 ```
 
+---
+
 **3. DISTINCT: retirando as duplicidades**
 
 **Tabela - vendas**
@@ -109,7 +121,7 @@ FROM vendas;
 
 Vou selecionar o campo **vendedor**, da tabela **vendas**:
 
-Utilizando a seguinte query:
+**Utilizando a seguinte query:**
 
 ```SQL
 SELECT vendedor
