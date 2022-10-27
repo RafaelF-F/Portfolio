@@ -174,7 +174,48 @@ Repare que apenas a última linha foi filtrada, pois repete o mesmo valor nas du
 
 ---
 
-4. WHERE
+**4. Utilizando a query WHERE**
 
 Quando estamos analisando dados em tabelas, é muito comum precisarmos de apenas partes das informações contidas na mesma.
 Para isso, podemos filtrar esses dados que satisfazem condições específicas, através do comando **WHERE (tradução: onde).**
+
+Vou aplicar o comando WHERE, na query abaixo.
+Para isso, filtrarei apenas os registros que tiraram nota igual a 10, da tabela alunos.
+
+**Tabela - alunos**
+|nome|materia|nota 
+--------|--------|-----
+|Cassio|Artes|10
+|Mônica|Geografia|8
+|José|Geografia|6
+|Bernardo|Artes|10
+|Aline|Geografia|8
+
+**Utilizando a seguinte query:**
+
+```SQL
+SELECT *
+FROM alunos
+WHERE nota = 10;
+```
+
+**Resultado:**
+|nome|materia|nota 
+--------|--------|-----
+|Cassio|Artes|10
+|Bernardo|Artes|10
+
+**Vou selecionar apenas a materia = 'Geografia'.**
+
+```SQL
+SELECT *
+FROM alunos
+WHERE materia = 'Geografia';
+```
+
+**Resultado:**
+|nome|materia|nota 
+--------|--------|-----
+|Mônica|Geografia|8
+|José|Geografia|6
+|Aline|Geografia|8
