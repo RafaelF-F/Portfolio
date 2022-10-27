@@ -183,7 +183,7 @@ FROM vendas;
 |Maria|50
 |Ana|100
 
-Repare que apenas a última linha foi filtrada, pois repete o mesmo valor nas duas Colunas **Ana** e **100** 
+Repare que apenas a última linha foi filtrada, pois repete o mesmo valor nas duas Colunas **(vendedor, valor).**
 
 ---
 
