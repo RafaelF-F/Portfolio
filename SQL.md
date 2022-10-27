@@ -41,6 +41,7 @@ Não é obrigatório, mas é considerada uma boa prática, finalizar uma query d
 |Maria|
 |Maria|
 |Ana|
+|Ana|
 
 Agora vou estar selecionando a coluna **cliente** da tabela vendas.
 
